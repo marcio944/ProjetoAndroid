@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="39dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp">
+
+            <EditText
+                android:id="@+id/editText_Email"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="185dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_email"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/editText_Password"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="256dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="295dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/editText_Repetir"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Repetir Senha"
+                android:drawableLeft="@drawable/ic_password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_Cadastrar"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:onClick="cadastrar"
+            android:text="Cadastrar" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

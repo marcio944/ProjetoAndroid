@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Usuário.recuperarSenhaActivity">
+
+    <TextView
+        android:id="@+id/textView_Recuperar"
+        android:layout_width="304dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Digite o email utilizado no cadastro." />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp">
+
+        <EditText
+            android:id="@+id/editText_Email"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="183dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editText_Senha"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="256dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="216dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editText_Repetir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_password"
+            android:ems="10"
+            android:hint="Repetir Senha"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_Recuperar"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="97dp"
+        android:onClick="recuperarSenha"
+        android:text="Recuperar" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introducao.ExemploAlgoritmoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_ExemploAlgoritmo"
+            android:layout_width="318dp"
+            android:layout_height="183dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="161dp"
+            app:srcCompat="@drawable/exemplo_algoritmo" />
+
+        <TextView
+            android:id="@+id/textView_ExemploAlgoritmo"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView_ExemploAlgoritmo"
+            android:layout_marginTop="34dp"
+            android:text="Exemplo de um Algoritmo que descreve o comportamento na resolução da ativadade troca de pneu do carro utilizando português coloquial."
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_retornarAlgoritmo"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView_ExemploAlgoritmo"
+            android:layout_marginBottom="87dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="retornarAlgoritmo"
+            android:text="Anterior" />
+
+        <Button
+            android:id="@+id/button_ProximoExeAlgoritmo"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView_ExemploAlgoritmo"
+            android:layout_alignTop="@+id/button_retornarAlgoritmo"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:text="Próximo" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

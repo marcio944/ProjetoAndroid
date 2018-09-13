@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introducao.AlgoritmoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_Poximo_Algoritmo"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_Algoritmo"
+            android:layout_alignTop="@+id/button_Anterior_Algoritmo"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:onClick="iniciarExemploAlgoritmo"
+            android:text="Próximo" />
+
+        <Button
+            android:id="@+id/button_Anterior_Algoritmo"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView_Algoritmo"
+            android:layout_marginBottom="36dp"
+            android:background="@color/colorPrimary"
+            android:text="Anterior"
+            android:onClick="retornarIntroducao"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView_Algoritmo"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="\t\t\tO objetivo principal do estudo da Lógica de Programação é o estudo de algoritmos coerentes e válidos. Mas o que é um algoritmo?
+                                \n\t\t\tUm algoritmo pode ser definido como uma sequência de passos que visam a antigir um objetivo bem definido.
+                                \n\t\t\tNa medida em que precisamos especificar uma sequência de passos, é necessário utilizar ordem, ou seja, 'pensar com ordem', portanto precisamos utilizar lógica.
+                                \n\t\t\tApesar do nome pouco usual, algoritmos são comuns em nosso cotidiano, como por exemplo, uma receita de bolo. Nela está descrita uma série de ingredientes necessários e uma sequência de diversos passos (ações) que devem ser fielmente cumpridos para que se consiga fazer o alimento desejado, conforme esperava antes do início das atividades."
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
