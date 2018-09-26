@@ -25,11 +25,6 @@
             android:name=".Usuário.recuperarSenhaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Introducao.IntroducaoActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -41,7 +36,8 @@
         <activity
             android:name=".Dados.DadosActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Controle.ControleActivity"></activity>
+        <activity android:name=".Controle.ControleActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
